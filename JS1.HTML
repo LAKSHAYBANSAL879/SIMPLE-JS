@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PASSWORD VALIDATOR</title>
+    <link rel="stylesheet" href="JS1.CSS">
+</head>
+<script>
+    function validatePassword() {
+        const password = document.getElementById("password").value;
+        const confirmedPassword = document.getElementById("confirmedPassword").value;
+
+        if (password === confirmedPassword) {
+            alert("Password Matched. Password validation Successful.");
+        } else {
+            alert("Password didn't match. Password validation unsuccessful.");
+        }
+    }
+    document.addEventListener("click",reset);
+</script>
+<body>
+    <h1>THIS IS A SIMPLE JS PROJECT</h1>
+    <form>
+        <label for="password">Password:</label>
+        <input type="number" name="" id="password"><br>
+        <label for="confirmedPassword">Confirm Password:</label>
+        <input type="password" name="" id="confirmedPassword"><br>
+        <input type="button" value="Validate" onclick="validatePassword()"><br>
+        <!-- <p id="result"></p> -->
+        <button id="reset">RESET</button>
+    </form>
+</body>
+</html>
